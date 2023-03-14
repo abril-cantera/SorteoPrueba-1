@@ -5,3 +5,5 @@ function setupModels(sequelize) {
 
   Winners.associate(sequelize.models)
 }
+
+module.exports = setupModels;
