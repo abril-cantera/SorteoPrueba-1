@@ -1,14 +1,14 @@
 const Joi = require('joi');
 
 const id = Joi.number().integer();
-const nameWinners = Joi.string().min(3).max(15);
+const nameWinner = Joi.string().min(3).max(15);
 
 const createWinnersSchema = Joi.object({
-  nameWinners: nameWinners.required(),
+  nameWinner: nameWinner.required(),
 });
 
 const updateWinnersSchema = Joi.object({
-  nameWinners: nameWinners,
+  nameWinner: nameWinner,
 });
 
 const getWinnersSchema = Joi.object({
