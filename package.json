@@ -4,7 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node index.js "
+    "start": "node index.js ",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint",
+    "migrations:generate": "sequelize-cli migration:generate --name",
+    "migrations:run": "sequelize-cli db:migrate",
+    "migrations:revert": "sequelize-cli db:migrate:undo",
+    "migrations:delete": "sequelize-cli db:migrate:undo:all"
   },
   "repository": {
     "type": "git",
