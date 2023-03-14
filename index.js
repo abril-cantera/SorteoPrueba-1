@@ -9,7 +9,7 @@ const app = express()
 const port = process.env.PORT || 3000;
 app.use(express.json());
 
-const whitelist = ['http://18.116.45.121:3000', 'http://18.116.45.121:3000/winners']
+const whitelist = ['http://18.116.45.121:3000', 'http://18.116.45.121:3000/winners', 'http://localhost:5500']
 
 const options = {
   origin: (origin, callback) => {
