@@ -15,12 +15,6 @@ module.exports = {
         type: Sequelize.DataTypes.STRING,
         unique: true,
         allowNull: false,
-      },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DataTypes.DATE,
-        field: 'created_at',
-        defaultValue: Sequelize.NOW,
       }
     });
   },
