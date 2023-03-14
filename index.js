@@ -1,7 +1,7 @@
-import express from 'express'
-import cors from 'cors';
+const express = require('express')
+const cors = require('cors');
 
-import routerApi from './routes';
+const routerApi = require('./routes');
 
 const { logErrors, errorHandler, boomErrorHandler, ormErrorHandler } = require('./middlewares/error.handler');
 
