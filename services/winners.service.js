@@ -12,16 +12,12 @@ class WinnersService {
   }
 
   async find() {
-    const winners = await models.Winners.findAll({
-      include: ['selection']
-    });
+    const winners = await models.Winners.findAll();
     return winners;
   }
 
   async findOne(id) {
-    const winners = await models.Winners.findByPk(id, {
-      include: ['selection']
-    });
+    const winners = await models.Winners.findByPk(id);
     return winners;
   }
 
