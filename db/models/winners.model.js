@@ -11,7 +11,7 @@ const WinnersSchema = {
   },
   nameWinner: {
     type: DataTypes.STRING,
-    unique: true,
+    unique: false,
     allowNull: false,
   },
 }

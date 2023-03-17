@@ -13,7 +13,7 @@ module.exports = {
       },
       nameWinner: {
         type: Sequelize.DataTypes.STRING,
-        unique: true,
+        unique: false,
         allowNull: false,
       }
     });
